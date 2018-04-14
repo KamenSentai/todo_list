@@ -1,0 +1,22 @@
+html
+    full-size()
+    body
+        position relative
+        full-size()
+        background linear-gradient(-45deg, darken($color-blue, 10) 50%, $color-blue 50%)
+        color $color-white
+        font-family $font-lato
+        overflow hidden
+
+        *::selection
+            background $color-blue
+            color $color-white
+
+@import './partials/popup'
+@import './partials/card'
+@import './partials/app'
+@import './partials/stats'
+@import './partials/slider'
+@import './partials/adding'
+@import './partials/list'
+@import './partials/table'

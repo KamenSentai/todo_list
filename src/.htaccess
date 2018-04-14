@@ -1,0 +1,14 @@
+RewriteEngine On
+RewriteRule	^$ index.php [L]
+RewriteRule	^([a-z]+)$ index.php?page=$1 [L]
+RewriteRule	^([a-z]+):::::(.*)$ index.php?page=$1$2 [L]
+# Pages
+RewriteRule	^([a-z]+):([a-zA-Z0-9]+)$ index.php?page=$1&check=$2 [L]
+RewriteRule	^([a-z]+):([a-zA-Z0-9]+)::::(.*)$ index.php?page=$1&check=$2$3 [L]
+RewriteRule	^([a-z]+):([a-zA-Z0-9]+)::([a-z]+)::::(.*)$ index.php?page=$1&check=$2&range=$3$4 [L]
+RewriteRule	^([a-z]+):([a-zA-Z0-9]+)::([a-z]+):::([a-z]+)::::(.*)$ index.php?page=$1&check=$2&range=$3&radio=$4$5 [L]
+# Dates
+RewriteRule	^app(&[a-z]+=[0-9\-]+)$ index.php?page=app$1 [L]
+RewriteRule	^app(&[a-z]+=[0-9\-]+)(&[a-z]+=[0-9\-]+)$ index.php?page=app$1$2 [L]
+RewriteRule	^app(&[a-z]+=[0-9\-]+)(&[a-z]+=[0-9\-]+)(&[a-z]+=[0-9\-]+)$ index.php?page=app$1$2$3 [L]
+RewriteRule	^app(&[a-z]+=[0-9\-]+)(&[a-z]+=[0-9\-]+)(&[a-z]+=[0-9\-]+)(&[a-z]+=[0-9\-]+)$ index.php?page=app$1$2$3$4 [L]
