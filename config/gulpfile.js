@@ -29,7 +29,7 @@ const gulpUglify       = require('gulp-uglify')
 
 const path =
 {
-	name : 'CAOVANTRUONG_Alain',
+	name : 'works/todo_list',
 	dist :
 	{
 		root    : './../dist/',
