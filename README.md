@@ -4,6 +4,7 @@
 - `src/views/includes/database/`
 
 ## Description
+- Homework about creating a todo list based on PHP and SQL
 - To do app allowing to note down tasks with their priority and their expiry date
 - Each task is associated with an user account
 - _Đừng quên_ means _Don't forget_ in vietnamese language
@@ -62,4 +63,4 @@
 
 ## Credits
 - Design : https://dribbble.com/shots/3384144-Hello-Dribbble
-- Developer : https://www.alain-caovantruong.fr/ (portfolio not finished yet 😢)
+- Developer : https://www.alain-caovantruong.fr/
