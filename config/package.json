@@ -36,8 +36,8 @@
     "url": "git+https://github.com/KamenSentai/todo_list.git"
   },
   "keywords": [
-	"todo",
-	"list"
+    "todo",
+    "list"
   ],
   "author": "Alain Cao Van Truong",
   "license": "MIT",
