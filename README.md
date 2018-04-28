@@ -9,13 +9,18 @@
 - Each task is associated with an user account
 - _Đừng quên_ means _Don't forget_ in vietnamese language
 
+## Demo
+
+- Hosted on 000Webhost
+- [alain-caovantruong.000webhostapp.com/todo_list/](https://alain-caovantruong.000webhostapp.com/todo_list/)
+
 ## Features
 - Create account
 - Define tasks
   - Add tasks
   - Delete tasks
   - Validate tasks
-  - Inalidate tasks
+  - Invalidate tasks
 - Define priority
 - Define expiry date
 - Display by date
