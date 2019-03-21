@@ -1,7 +1,10 @@
 # Todo list application developed by Alain CAO VAN TRUONG
 
+## ⚠️ Warning ⚠️
+This projects was my first PHP experience and I intend to refactor it but whithout any framework.
+
 ## Database location
-- `src/views/includes/database/`
+- `database/`
 
 ## Description
 - Homework about creating a todo list based on PHP and SQL
