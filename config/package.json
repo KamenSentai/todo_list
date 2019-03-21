@@ -33,7 +33,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KamenSentai/todo_list.git"
+    "url": "git+https://github.com/KamenSentai/Todo_List.git"
   },
   "keywords": [
     "todo",
@@ -42,7 +42,7 @@
   "author": "Alain Cao Van Truong",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/KamenSentai/todo_list/issues"
+    "url": "https://github.com/KamenSentai/Todo_List/issues"
   },
-  "homepage": "https://github.com/KamenSentai/todo_list#readme"
+  "homepage": "https://github.com/KamenSentai/Todo_List#readme"
 }
