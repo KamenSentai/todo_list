@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { joinClassNames } from '@/helpers/';
 import styles from './styles.module.scss';
 import slot from './slot';
 
@@ -12,12 +13,7 @@ const Icon = ({
   const IconType = slot[name];
   return (
     <IconType
-      className={[
-        styles[`color-${color}`],
-        !!hover && styles[`hover-${hover}`],
-      ]
-        .filter((className) => !!className)
-        .join(' ')}
+      className={joinClassNames(styles[`color-${color}`], !!hover && styles[`hover-${hover}`])}
       width={width}
       height={height}
     />

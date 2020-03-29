@@ -1,6 +1,7 @@
 import Link from 'next/link';
-import Icon from '@/components/Icon';
 import { useRouter } from 'next/router';
+import Icon from '@/components/Icon';
+import { joinClassNames } from '@/helpers/';
 import styles from './styles.module.scss';
 
 const Header = () => {
@@ -9,13 +10,7 @@ const Header = () => {
   const isHome = homeRoute === route;
 
   return (
-    <header className={[
-      styles.container,
-      !isHome && styles.hasLink,
-    ]
-      .filter((className) => !!className)
-      .join(' ')}
-    >
+    <header className={joinClassNames(styles.container, !isHome && styles.hasLink)}>
       {!isHome && (
         <Link href={homeRoute}>
           {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
