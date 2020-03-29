@@ -1,5 +1,5 @@
 import Button from '@/components/Button/';
-import styles from './style.module.scss';
+import styles from './styles.module.scss';
 
 const Navigation = () => (
   <nav className={styles.container}>

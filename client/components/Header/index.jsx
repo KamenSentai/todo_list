@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Icon from '@/components/Icon';
 import { useRouter } from 'next/router';
-import styles from './style.module.scss';
+import styles from './styles.module.scss';
 
 const Header = () => {
   const { route } = useRouter();

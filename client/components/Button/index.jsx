@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import PropTypes from 'prop-types';
-import styles from './style.module.scss';
+import styles from './styles.module.scss';
 
 const Button = ({ children, path }) => (
   <Link href={`/${path}`}>
