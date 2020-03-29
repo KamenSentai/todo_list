@@ -7,6 +7,9 @@ module.exports = withSass({
     importLoaders: 1,
     localIdentName: '[path][name]_[local]-[hash:base64:5]',
   },
+  env: {
+    name: 'Dung quen !',
+  },
   webpack(config) {
     config.resolve.alias['@'] = path.resolve(__dirname);
     config.module.rules.push({

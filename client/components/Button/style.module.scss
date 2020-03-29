@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: size(xl);
+  color: color(dark);
+  font-weight: 300;
+  font-size: size(sm);
+  text-transform: uppercase;
+  background-color: color(light);
+  border-radius: $global-radius;
+  opacity: .25;
+  transition: opacity $smooth;
+
+  &:hover {
+    opacity: 1;
+  }
+}

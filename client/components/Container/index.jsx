@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
 import styles from './style.module.scss';
 
-const Card = ({ children }) => (
+const Container = ({ children }) => (
   <div className={styles.container}>{children}</div>
 );
 
-Card.propTypes = {
+Container.propTypes = {
   children: PropTypes.oneOfType([PropTypes.element, PropTypes.array]).isRequired,
 };
 
-export default Card;
+export default Container;

@@ -1,0 +1,6 @@
+.container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: space(lg);
+  align-content: center;
+}

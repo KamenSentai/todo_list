@@ -1,0 +1,5 @@
+.container {
+  display: grid;
+  grid-gap: space(xl);
+  grid-template-rows: auto 1fr;
+}
