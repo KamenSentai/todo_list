@@ -1,9 +1,11 @@
 $spaces: (
-  xs: .2rem,
-  sm: .4rem,
-  md: .8rem,
-  lg: 1.6rem,
-  xl: 3.2rem,
+  xxs: .2rem,
+  xs: .4rem,
+  sm: .8rem,
+  md: 1.6rem,
+  lg: 3.2rem,
+  xl: 6.4rem,
+  xxl: 12.8rem,
 );
 
 @function space($name) {
