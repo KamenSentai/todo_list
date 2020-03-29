@@ -1,11 +1,5 @@
-import Card from '@/components/Card/';
-import Container from '@/components/Container/';
-import Header from '@/components/Header/';
+import Layout from '@/components/Layout/';
 
-export default () => (
-  <Card>
-    <Container>
-      <Header />
-    </Container>
-  </Card>
-);
+const Page = () => <div />;
+
+export default Layout(Page);
