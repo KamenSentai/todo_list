@@ -13,7 +13,6 @@ const Header = () => {
     <header className={joinClassNames(styles.container, !isHome && styles.hasLink)}>
       {!isHome && (
         <Link href={homeRoute}>
-          {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
           <a className={styles.link}>
             <Icon hover="primary" name="Return" width="20px" />
           </a>
