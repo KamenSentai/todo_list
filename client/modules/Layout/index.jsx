@@ -1,7 +1,7 @@
 import Head from 'next/head';
+import Header from '@/modules/Header/';
 import Card from '@/components/Card/';
 import Container from '@/components/Container/';
-import Header from '@/components/Header/';
 
 export default (Page) => () => (
   <Card>

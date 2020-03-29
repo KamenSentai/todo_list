@@ -16,6 +16,7 @@
         "alias": {
           "@/assets": "./assets",
           "@/components": "./components",
+          "@/modules": "./modules",
           "@/styles": "./styles"
         }
       }

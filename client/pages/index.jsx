@@ -1,5 +1,5 @@
-import Layout from '@/components/Layout/';
-import Navigation from '@/components/Navigation/';
+import Layout from '@/modules/Layout/';
+import Navigation from '@/modules/Navigation/';
 
 const Page = () => <Navigation />;
 

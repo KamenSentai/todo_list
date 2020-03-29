@@ -1,4 +1,4 @@
-import Layout from '@/components/Layout/';
+import Layout from '@/modules/Layout/';
 
 const Page = () => <div />;
 
