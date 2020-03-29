@@ -11,11 +11,11 @@ const Icon = ({
   height,
 }) => {
   const IconType = slot[name];
+  const size = { ...!!width && { width }, ...!!height && { height } };
   return (
     <IconType
       className={joinClassNames(styles[`color-${color}`], !!hover && styles[`hover-${hover}`])}
-      width={width}
-      height={height}
+      {...size}
     />
   );
 };

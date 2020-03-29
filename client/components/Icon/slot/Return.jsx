@@ -1,6 +1,5 @@
 const Return = (props) => (
   <svg
-    // eslint-disable-next-line react/jsx-props-no-spreading
     {...props}
     viewBox="0 0 512 512"
     fill="currentColor"
