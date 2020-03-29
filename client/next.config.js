@@ -8,7 +8,7 @@ module.exports = withSass({
     localIdentName: '[path][name]_[local]-[hash:base64:5]',
   },
   env: {
-    name: 'Dung quen !',
+    name: 'Đừng quên !',
   },
   webpack(config) {
     config.resolve.alias['@'] = path.resolve(__dirname);

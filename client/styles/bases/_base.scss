@@ -16,7 +16,7 @@ body {
   padding: space(xl);
   color: color(light);
   font-weight: normal;
-  font-family: $font;
+  font-family: $font-base;
   background-color: color(primary);
 
   &::before {
