@@ -1,3 +1,7 @@
+/**
+ * Clear falsy props
+ * @param {Object} props
+ */
 export const clearProps = (props) => {
   const result = {};
 
@@ -8,6 +12,10 @@ export const clearProps = (props) => {
   return result;
 };
 
+/**
+ * Join a list of truthy class names
+ * @param  {...String} classNames
+ */
 export const joinClassNames = (...classNames) => classNames
   .filter((className) => !!className)
   .join(' ');
