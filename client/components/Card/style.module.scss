@@ -1,0 +1,10 @@
+.container {
+  width: $global-width;
+  max-width: 100%;
+  height: $global-height;
+  max-height: 100%;
+  padding: space(xl);
+  background-color: color(dark);
+  border-radius: $global-radius;
+  box-shadow: $global-shadow;
+}

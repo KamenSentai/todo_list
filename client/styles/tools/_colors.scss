@@ -1,0 +1,20 @@
+$colors: (
+  primary: #64cdfa,
+  danger: #ec4317,
+  warning: #f99520,
+  success: #2eba03,
+  light: #fbfbfb,
+  dark: #282828,
+);
+
+@function color($name, $opacity: 1) {
+  $value: nth(map-get($colors, $name), 1);
+
+  @if $opacity != 1 {
+    @return unquote("rgba(#{red($value)}, #{green($value)}, #{blue($value)}, #{$opacity})");
+  }
+
+  @else {
+    @return map-get($colors, $name);
+  }
+}

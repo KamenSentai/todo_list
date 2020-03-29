@@ -1,0 +1,11 @@
+$spaces: (
+  xs: .2rem,
+  sm: .4rem,
+  md: .8rem,
+  lg: 1.6rem,
+  xl: 3.2rem,
+);
+
+@function space($name) {
+  @return map-get($spaces, $name);
+}

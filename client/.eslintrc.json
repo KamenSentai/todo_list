@@ -15,7 +15,8 @@
         "root": ["./"],
         "alias": {
           "@/assets": "./assets",
-          "@/components": "./components"
+          "@/components": "./components",
+          "@/styles": "./styles"
         }
       }
     },
