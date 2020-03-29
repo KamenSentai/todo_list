@@ -1,5 +1,5 @@
-import Link from 'next/link';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 import Icon from '@/components/Icon';
 import { joinClassNames } from '@/helpers/';
 import styles from './styles.module.scss';

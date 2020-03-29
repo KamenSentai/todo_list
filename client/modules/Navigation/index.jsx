@@ -3,8 +3,8 @@ import styles from './styles.module.scss';
 
 const Navigation = () => (
   <nav className={styles.container}>
-    <Button path="signin">Sign in</Button>
-    <Button path="signup">Sign up</Button>
+    <Button href="signin" isLink isPrimary>Sign in</Button>
+    <Button href="signup" isLink isPrimary>Sign up</Button>
   </nav>
 );
 

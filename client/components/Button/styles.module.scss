@@ -3,15 +3,25 @@
   align-items: center;
   justify-content: center;
   height: size(xl);
-  color: color(dark);
+  padding: 0 space(md);
   font-size: size(xs);
   text-transform: uppercase;
-  background-color: color(light);
   border-radius: $global-radius;
+  cursor: pointer;
   opacity: .25;
   transition: opacity $smooth;
 
   &:hover {
     opacity: 1;
+  }
+
+  &:not(.isPrimary) {
+    color: color(light);
+    border: solid .1rem color(light);
+  }
+
+  &.isPrimary {
+    color: color(dark);
+    background-color: color(light);
   }
 }
