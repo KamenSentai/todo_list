@@ -20,7 +20,7 @@ const Header = () => {
         <Link href={homeRoute}>
           {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
           <a className={styles.link}>
-            <Icon name="Return" width="20px" />
+            <Icon hover="primary" name="Return" width="20px" />
           </a>
         </Link>
       )}

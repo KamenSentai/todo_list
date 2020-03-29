@@ -3,4 +3,12 @@
   .color-#{$name} {
     color: $color;
   }
+
+  .hover-#{$name} {
+    transition: color $smooth;
+
+    &:hover {
+      color: $color;
+    }
+  }
 }
