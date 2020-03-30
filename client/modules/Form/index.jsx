@@ -7,16 +7,18 @@ import { clearProps } from '@/helpers/';
 import styles from './styles.module.scss';
 
 const Form = ({ inputs, redirection, submit }) => {
+  const [errorMessages, setErrorMessages] = useState(inputs.map(() => ''));
   const [models, setModels] = useState(inputs.map(() => ''));
 
   const updateModel = (index, event) => {
     setModels(models.map((model, i) => (i === index ? event.target.value : model)));
+    setErrorMessages(errorMessages.map((errorMessage, i) => (i === index ? '' : errorMessage)));
   };
 
   const submitForm = (event) => {
     event.preventDefault();
 
-    const areValid = models.map((model, index) => {
+    const checks = models.map((model, index) => {
       const currentInput = inputs[index];
       const checkPassed = currentInput.check.test(model);
       const confirmTarget = currentInput.confirm
@@ -42,7 +44,13 @@ const Form = ({ inputs, redirection, submit }) => {
       };
     });
 
-    console.log(areValid);
+    setErrorMessages(checks.map((item) => item.message));
+
+    const areValid = checks.reduce((prev, accu) => prev && accu.isValid);
+
+    if (areValid) {
+      // TODO: fetch API
+    }
   };
 
   return (
@@ -54,6 +62,7 @@ const Form = ({ inputs, redirection, submit }) => {
             key={`input-${index}`}
             value={models[index]}
             index={index}
+            error={errorMessages[index]}
             onChange={(e) => { updateModel(index, e); }}
           />
         ))}

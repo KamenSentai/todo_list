@@ -22,14 +22,32 @@
   }
 }
 
-.label {
+.label,
+.error {
   position: absolute;
   top: 0;
-  left: 0;
   font-size: size(xs);
+  pointer-events: none;
+}
+
+.label {
+  left: 0;
   transform-origin: left bottom;
   opacity: .25;
   transition: transform $smooth, opacity $smooth;
+}
+
+.error {
+  right: 0;
+  color: color(danger);
+  transform: translateY(calc(-100% - #{space(xs)})) scale(.75);
+  transform-origin: right bottom;
+  opacity: 0;
+  transition: opacity $smooth;
+
+  &.isVisible {
+    opacity: 1;
+  }
 }
 
 .border {
