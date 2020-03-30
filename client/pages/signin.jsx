@@ -7,14 +7,14 @@ const Page = () => (
       {
         name: 'id',
         check: /^.{1,}$/,
-        placeholder: 'Name',
+        label: 'Name',
         type: 'text',
         errorValidationMessage: 'Name is empty',
       },
       {
         name: 'password',
         check: /^.{1,}$/,
-        placeholder: 'Password',
+        label: 'Password',
         type: 'password',
         errorValidationMessage: 'Password is empty',
       },

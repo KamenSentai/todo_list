@@ -53,6 +53,7 @@ const Form = ({ inputs, redirection, submit }) => {
             {...clearProps(input)}
             key={`input-${index}`}
             value={models[index]}
+            index={index}
             onChange={(e) => { updateModel(index, e); }}
           />
         ))}
@@ -73,7 +74,7 @@ Form.propTypes = {
       name: PropTypes.string,
       confirm: PropTypes.string,
       check: PropTypes.regexp,
-      placeholder: PropTypes.string,
+      label: PropTypes.string,
       type: PropTypes.string,
       errorConfirmationMessage: PropTypes.string,
       errorValidationMessage: PropTypes.string,

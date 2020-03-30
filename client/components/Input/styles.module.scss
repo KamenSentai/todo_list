@@ -1,4 +1,5 @@
 .container {
+  position: relative;
   display: grid;
   grid-gap: space(sm);
 }
@@ -7,9 +8,28 @@
   font-weight: 300;
   font-size: size(xs);
 
-  &:focus + .border::after {
-    transform: scaleX(1);
+  &.isFilled,
+  &:focus {
+
+    + .label {
+      transform: translateY(calc(-100% - #{space(xs)})) scale(.75);
+      opacity: 1;
+    }
+
+    + .border::after {
+      transform: scaleX(1);
+    }
   }
+}
+
+.label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: size(xs);
+  transform-origin: left bottom;
+  opacity: .25;
+  transition: transform $smooth, opacity $smooth;
 }
 
 .border {

@@ -1,27 +1,33 @@
 import PropTypes from 'prop-types';
+import { joinClassNames } from '@/helpers/';
 import styles from './styles.module.scss';
 
 const Input = ({
+  index,
+  label,
   onChange,
-  placeholder,
   type,
   value,
 }) => (
   <div className={styles.container}>
     <input
-      className={styles.input}
+      id={index}
+      className={joinClassNames(styles.input, !!value && styles.isFilled)}
       onChange={onChange}
-      placeholder={placeholder}
       type={type}
       value={value}
     />
+    <label className={styles.label} htmlFor={index}>
+      {label}
+    </label>
     <div className={styles.border} />
   </div>
 );
 
 Input.propTypes = {
+  index: PropTypes.number.isRequired,
+  label: PropTypes.string.isRequired,
   onChange: PropTypes.func,
-  placeholder: PropTypes.string.isRequired,
   type: PropTypes.string,
   value: PropTypes.string,
 };
