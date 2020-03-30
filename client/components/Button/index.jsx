@@ -8,14 +8,16 @@ const Button = ({
   href,
   isLink,
   isPrimary,
+  onClick,
   type,
 }) => {
   const Tag = isLink ? Link : 'button';
   const className = joinClassNames(styles.container, isPrimary && styles.isPrimary);
+
   return (
     <Tag {...clearProps({
       ...isLink && { href: `/${href}` },
-      ...!isLink && { className, type },
+      ...!isLink && { className, onClick, type },
     })}
     >
       {isLink && (
@@ -33,6 +35,7 @@ Button.propTypes = {
   href: PropTypes.string,
   isLink: PropTypes.bool,
   isPrimary: PropTypes.bool,
+  onClick: PropTypes.func,
   type: PropTypes.string,
 };
 
@@ -40,6 +43,7 @@ Button.defaultProps = {
   href: '',
   isLink: false,
   isPrimary: false,
+  onClick: () => {},
   type: '',
 };
 

@@ -5,16 +5,26 @@ const Page = () => (
   <Form
     inputs={[
       {
+        name: 'id',
+        check: /^.{4,}$/,
         placeholder: 'Name',
         type: 'text',
+        errorValidationMessage: 'Name requires at least 4 characters',
       },
       {
+        name: 'password',
+        check: /^.{4,}$/,
         placeholder: 'Password',
         type: 'password',
+        errorValidationMessage: 'Password requires at least 4 characters',
       },
       {
+        confirm: 'password',
+        check: /^.{4,}$/,
         placeholder: 'Confirm password',
         type: 'password',
+        errorConfirmationMessage: 'Password does not match',
+        errorValidationMessage: 'Password requires at least 4 characters',
       },
     ]}
     redirection={{

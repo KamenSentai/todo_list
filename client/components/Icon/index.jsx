@@ -11,6 +11,7 @@ const Icon = ({
   height,
 }) => {
   const IconType = slot[name];
+
   return (
     <IconType
       className={joinClassNames(styles[`color-${color}`], !!hover && styles[`hover-${hover}`])}
