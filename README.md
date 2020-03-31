@@ -1,7 +1,7 @@
 # Todo list application developed by Alain CAO VAN TRUONG
 
 ## ⚠️ Warning ⚠️
-This projects was my first PHP experience and I intend to refactor it but whithout any framework.
+This projects was my first PHP experience and I intend to refactor it.
 
 ## Database location
 - `database/`
@@ -11,11 +11,6 @@ This projects was my first PHP experience and I intend to refactor it but whitho
 - To do app allowing to note down tasks with their priority and their expiry date
 - Each task is associated with an user account
 - _Đừng quên_ means _Don't forget_ in vietnamese language
-
-## Demo
-
-- Hosted on 000Webhost
-- [alain-caovantruong.000webhostapp.com/todo_list/](https://alain-caovantruong.000webhostapp.com/todo_list/)
 
 ## Features
 - Create account
@@ -71,4 +66,4 @@ This projects was my first PHP experience and I intend to refactor it but whitho
 
 ## Credits
 - Design : https://dribbble.com/shots/3384144-Hello-Dribbble
-- Developer : https://www.alain-caovantruong.fr/
+- Developer : https://www.alaincaovantruong.com/
