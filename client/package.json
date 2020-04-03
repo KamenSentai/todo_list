@@ -1,7 +1,13 @@
 {
   "name": "client",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
+  "author": {
+    "name": "Alain Cao Van Truong",
+    "email": "contact@alaincaovantruong.com",
+    "url": "https://www.alaincaovantruong.com"
+  },
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
