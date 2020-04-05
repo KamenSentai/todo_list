@@ -18,7 +18,7 @@ const Header = () => {
           </a>
         </Link>
       )}
-      <h1 className={styles.title}>{process.env.name}</h1>
+      <h1 className={styles.title}>{process.env.appName}</h1>
     </header>
   );
 };

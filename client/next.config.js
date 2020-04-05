@@ -1,5 +1,13 @@
+require('dotenv').config();
 const path = require('path');
 const withSass = require('@zeit/next-sass');
+
+const {
+  APP_NAME,
+  API_URL_DEVELOPMENT,
+  API_URL_PRODUCTION,
+  NODE_ENV,
+} = process.env;
 
 module.exports = withSass({
   cssModules: true,
@@ -8,7 +16,8 @@ module.exports = withSass({
     localIdentName: '[path][name]_[local]-[hash:base64:5]',
   },
   env: {
-    name: 'Đừng quên !',
+    appName: APP_NAME,
+    apiUrl: NODE_ENV === 'development' ? API_URL_DEVELOPMENT : API_URL_PRODUCTION,
   },
   webpack(config) {
     config.resolve.alias['@'] = path.resolve(__dirname);
