@@ -1,0 +1,36 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": {
+    "name": "Alain Cao Van Truong",
+    "email": "contact@alaincaovantruong.com",
+    "url": "https://www.alaincaovantruong.com"
+  },
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon --exec babel-node index.js"
+  },
+  "dependencies": {
+    "apollo-server": "^2.11.0",
+    "apollo-server-express": "^2.11.0",
+    "bcrypt": "^4.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "graphql": "^15.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "nodemon": "^2.0.2"
+  }
+}
