@@ -5,6 +5,8 @@ import { AuthenticationError } from 'apollo-server';
 
 config();
 
+const { JWT_LIFESPAN, JWT_SECRET } = process.env;
+
 export default {
   User: {
     tasks: async ({ id }, _, { models: { taskModel } }) => {
@@ -25,7 +27,7 @@ export default {
       const matchPassword = bcrypt.compareSync(password, user.password);
       if (!matchPassword) throw new AuthenticationError('Invalid credentials');
 
-      const token = jwt.sign({ id: user.id }, process.env.JWT_SECRET, { expiresIn: 3600 });
+      const token = jwt.sign({ id: user.id }, JWT_SECRET, { expiresIn: JWT_LIFESPAN });
 
       return {
         token,
