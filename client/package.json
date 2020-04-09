@@ -15,8 +15,16 @@
     "test": "jest"
   },
   "dependencies": {
+    "@apollo/react-hooks": "^3.1.4",
+    "@apollo/react-ssr": "^3.1.4",
     "@zeit/next-sass": "^1.0.1",
+    "apollo-cache-inmemory": "^1.6.5",
+    "apollo-client": "^2.6.8",
+    "apollo-link-http": "^1.5.16",
     "dotenv": "^8.2.0",
+    "graphql": "^15.0.0",
+    "graphql-tag": "^2.10.3",
+    "isomorphic-unfetch": "^3.0.0",
     "next": "9.3.2",
     "node-sass": "^4.13.1",
     "prop-types": "^15.7.2",
