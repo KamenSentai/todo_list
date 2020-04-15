@@ -4,9 +4,9 @@ import express from 'express';
 import jwt from 'jsonwebtoken';
 import mongoose from 'mongoose';
 import { ApolloServer, AuthenticationError } from 'apollo-server-express';
-import controllers from './controllers';
 import models from './models';
-import services from './services';
+import resolvers from './resolvers';
+import schemas from './schemas';
 
 const app = express();
 app.use(cors());
@@ -27,8 +27,8 @@ const checkToken = async (token) => {
 };
 
 const server = new ApolloServer({
-  typeDefs: services,
-  resolvers: controllers,
+  typeDefs: schemas,
+  resolvers,
   context: async ({ req }) => {
     if (req) {
       const check = await checkToken(req.headers.token);
